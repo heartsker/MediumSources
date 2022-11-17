@@ -1,4 +1,4 @@
-public class NumberSeriesShort: Encodable {
+final public class NumberSeriesShort: Encodable {
     public var name: String
     public var numbers: [Int?]
 
@@ -7,7 +7,7 @@ public class NumberSeriesShort: Encodable {
         self.numbers = numbers
     }
 
-    private enum CodingKeys: String, CodingKey {
+    public enum CodingKeys: String, CodingKey {
         case name
         case numbers
     }

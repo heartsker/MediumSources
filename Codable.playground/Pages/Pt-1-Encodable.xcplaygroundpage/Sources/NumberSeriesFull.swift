@@ -1,4 +1,4 @@
-public class NumberSeriesFull: Encodable {
+final public class NumberSeriesFull: Encodable {
     public var name: String
     public var numbers: [Int?]
 
@@ -13,7 +13,7 @@ public class NumberSeriesFull: Encodable {
         try container.encode(numbers, forKey: .numbers)
     }
 
-    private enum CodingKeys: String, CodingKey {
+    public enum CodingKeys: String, CodingKey {
         case name
         case numbers
     }
